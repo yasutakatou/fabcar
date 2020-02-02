@@ -15,16 +15,15 @@ Apache License, Version 2.0なのでいじくったソース載せてもいい�
 **node enrollAdmin.js**と**node registerUser.js**は元コードをそのまま実行し、ユーザー登録をします<br>
 その後、**node invoke.js**を実行して、メールアドレスと紐づくスマホのIMEIを登録します。curlなどで以下のように登録します。<br>
 
-'''
+```
 curl -X POST -H 'Content-Type: application/json' http://localhost:28080/input -d '{ "Mail": "test@test.com", "IMEI": "112233445566778"}'
-
-'''
+```
 
 登録が終わったら**node query.js**を起動させて、こちらもcurlなどでAPIリクエストをなげて確認してみましょう<br>
 
-'''
+```
 curl -X POST -H 'Content-Type: application/json' http://localhost:38080/query -d '{ "Mail": "test@test.com", "IMEI": "112233445566778"}'
-'''
+```
 
 **0**が返ってくればOKです<br>
 
