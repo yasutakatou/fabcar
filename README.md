@@ -12,7 +12,7 @@ Apache License, Version 2.0なのでいじくったソース載せてもいい�
 [Hyperledger Fabricのチュートリアル触ってみた(FabCar)](https://qiita.com/ImYuya/items/21eb529b66c666d61129)
 
 元の**fabcar.go**を差し替えて**startFabric.sh**からチェーンコードを起動します<br>
-**node enrollAdmin.js**と**node registerUser.js**は元コードをそのまま実行し、ユーザー登録をします<br>
+**node enrollAdmin.js**と**node registerUser.js**は元コードをそのまま実行し、ユーザー登録します<br>
 その後、**node invoke.js**を実行して、メールアドレスと紐づくスマホのIMEIを登録します。curlなどで以下のように登録します。<br>
 
 ```
